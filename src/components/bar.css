@@ -1,0 +1,53 @@
+.bar__column {
+    background-color: var(--Soft-red);
+    border-radius: 3px;
+    position: relative;
+}
+
+.bar__column_today {
+    background-color: var(--Cyan);
+}
+
+.bar__index {
+    margin-top: 1em;
+    font-size: 0.7em;
+    color: var(--Medium-brown);
+    text-align: center;
+}
+
+.bar__detail {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .bar__column {
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .bar__index {
+        margin-top: 0.6em;
+        font-size: 0.95em;
+    }
+
+    .bar__detail {
+        display: none;
+        position: absolute;
+        top: -2.5em;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.18em;
+        color: var(--Very-pale-orange);
+        background-color: var(--Dark-brown);
+        padding: 0.4em 0.4em;
+        border-radius: 6px;
+    }
+    
+    .bar__detail_show {
+        display: block;
+        z-index: 1;
+    }
+    .bar__column_filter {
+        filter: opacity(50%);
+    }
+
+}

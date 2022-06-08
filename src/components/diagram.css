@@ -1,0 +1,39 @@
+.diagram {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid var(--Cream);
+}
+
+.diagram__title {
+    font-size: 1.51em;
+    margin-bottom: 2.15em;
+    color: var(--Dark-brown);
+}
+
+.diagram__detail {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 10fr 1fr;
+    grid-auto-flow: column;
+    align-items: end;
+    column-gap: 12px;
+    height: 26.5vh;
+}
+
+@media (min-width: 800px) {
+    .diagram {
+        padding-bottom: 2em;
+    }
+    .diagram__title {
+        font-size: 2em;
+        margin-bottom: 2.1em;
+    }
+    .diagram__detail {
+        column-gap: 18px;
+        height: 17.5vh;
+    }
+
+}
